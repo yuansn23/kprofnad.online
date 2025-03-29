@@ -45,31 +45,6 @@
             background-repeat: no-repeat;
         }
         
-        .float-notification {
-            position: fixed;
-            right: 20px;
-            top: 50%;
-            transform: translateY(-50%);
-            z-index: 1000;
-        }
-        
-        .notification-badge {
-            position: absolute;
-            top: -5px;
-            right: -5px;
-            background-color: #FF4A4A;
-            color: white;
-            border-radius: 50%;
-            width: 22px;
-            height: 22px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 12px;
-            font-weight: bold;
-            border: 2px solid white;
-        }
-        
         .cta-button {
             transition: all 0.3s ease;
             position: relative;
@@ -129,17 +104,6 @@
     </style>
 </head>
 <body class="bg-cream dark:bg-dark text-gray-800 dark:text-light">
-    <!-- Fixed Message Notification Icon -->
-    <div class="float-notification cursor-pointer" onclick="openSite()">
-        <div class="relative bg-primary dark:bg-secondary rounded-full p-2 shadow-lg hover:shadow-xl transition-all duration-300">
-            <svg class="w-[60px] h-[60px] text-white" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 5a2 2 0 012-2h7a2 2 0 012 2v4a2 2 0 01-2 2H9l-3 3v-3H4a2 2 0 01-2-2V5z"></path>
-                <path d="M15 7v2a4 4 0 01-4 4H9.828l-1.766 1.767c.28.149.599.233.938.233h2l3 3v-3h2a2 2 0 002-2V9a2 2 0 00-2-2h-1z"></path>
-            </svg>
-            <div class="notification-badge">1</div>
-        </div>
-    </div>
-
     <!-- Hero Section with improved layout -->
     <header class="pattern-bg text-white relative overflow-hidden">
         <div class="container mx-auto px-4 py-16 md:py-24 relative z-10">
@@ -196,7 +160,7 @@
                     <div class="absolute -top-20 -right-20 w-64 h-64 bg-accent/20 rounded-full filter blur-3xl"></div>
                     <div class="absolute -bottom-10 -left-10 w-40 h-40 bg-secondary/20 rounded-full filter blur-2xl"></div>
                     <div class="relative z-10 bg-gradient-to-br from-white/10 to-white/5 p-3 rounded-2xl backdrop-blur-sm border border-white/20 shadow-xl">
-                        <img src="https://www.cfrancmym.online/a1.jpg" alt="前澤友作" class="rounded-xl shadow-lg w-full object-cover">
+                        <img src="https://www.kprofnad.online/2.jpg" alt="前澤友作" class="rounded-xl shadow-lg w-full object-cover">
                         <div class="absolute -bottom-3 -right-3 bg-accent text-white text-xs font-bold px-4 py-1 rounded-full shadow-lg">
                             公式
                         </div>
@@ -325,7 +289,7 @@
                     </div>
                 </div>
                 <div class="w-full lg:w-1/2">
-                    <img src="https://www.goodmja.online/rigu/3.jpg" alt="コミュニティ" class="rounded-2xl shadow-2xl object-cover w-full">
+                    <img src="https://www.kprofnad.online/17506.jpg" alt="コミュニティ" class="rounded-2xl shadow-2xl object-cover w-full">
                     
                     <div class="mt-8 grid grid-cols-1 md:grid-cols-2 gap-4">
                         <div class="bg-white dark:bg-gray-800 rounded-xl shadow-lg p-5">
@@ -519,7 +483,7 @@
         </div>
     </section>
 
-    <!-- Footer -->
+    <!-- Footer with detailed disclaimer -->
     <footer class="py-12 bg-gray-100 dark:bg-gray-900">
         <div class="container mx-auto px-4">
             <div class="max-w-4xl mx-auto">
@@ -543,9 +507,21 @@
                         </button>
                     </div>
                 </div>
-                <div class="border-t border-gray-200 dark:border-gray-800 pt-8 text-center text-sm text-gray-600 dark:text-gray-400">
-                    <p class="mb-4">免責事項：経済には変動があり、判断には慎重さが必要です。本プラットフォームは知識共有のみを目的としており、金融アドバイスを構成するものではありません。</p>
-                    <p class="mb-6">本プラットフォームのすべてのコンテンツは教育目的であり、特定の結果を保証するものではありません。利用者は自身の状況に基づいて独自に意思決定すべきです。</p>
+                <div class="border-t border-gray-200 dark:border-gray-800 pt-8 text-center text-sm text-gray-600 dark:text-gray-400 space-y-4">
+                    <div class="bg-gray-50 dark:bg-gray-800 p-6 rounded-xl shadow-sm">
+                        <h4 class="text-lg font-bold text-primary dark:text-secondary mb-4">重要な免責事項</h4>
+                        <div class="space-y-3 text-left">
+                            <p>本プラットフォームは純粋に教育目的のみで提供されており、特定の金融商品の購入、保有、売却を推奨するものではありません。ここで提供される情報は一般的な知識の提供を目的としており、個別の財務状況、投資目標、リスク許容度を考慮したものではありません。</p>
+                            
+                            <p>当コンテンツは一般的な情報提供のみを目的としており、金融アドバイス、税務アドバイス、法的アドバイス、会計アドバイスなどの専門的なアドバイスに代わるものではありません。投資判断を行う前に、ご自身の状況に応じた専門家（ファイナンシャルアドバイザー、税理士、弁護士など）にご相談ください。</p>
+                            
+                            <p>金融・投資に関する意思決定は、常にリスクを伴います。市場の変動により、投資価値は増減する可能性があり、元本の保証はありません。過去のパフォーマンスは将来の結果を保証するものではなく、将来の投資結果を予測する信頼できる指標とはなりません。</p>
+                            
+                            <p>本プラットフォームの利用者は、提供される情報に基づいて行った行動や決定に対して全責任を負うものとします。当プラットフォームの運営者、関連会社、提携パートナーは、本コンテンツの使用に起因する直接的、間接的、偶発的、特別、または結果的損害について一切の責任を負いません。</p>
+                            
+                            <p>また、当プラットフォームは特定の金融機関や金融商品の販売・勧誘を行うものではなく、金融商品取引法に基づく開示資料ではありません。特定の金融商品やサービスへの投資を検討する際は、各金融機関が提供する公式な契約締結前交付書面、目論見書、約款等をよくお読みいただき、内容を十分にご理解の上、ご自身の判断でお取引ください。</p>
+                        </div>
+                    </div>
                     <p>© 2023 金融教育プラットフォーム. All rights reserved.</p>
                 </div>
             </div>
